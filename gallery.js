@@ -25,7 +25,7 @@ images.forEach((item, i) => {
 })
 
 const updateImage = (i) => {
-    let path = `IMG (${i+1}).png`;
+    let path = `img (${i+1}).png`;
     largeImage.src = path;
     imageName.innerHTML = "Jeen Wooden Furniture";
     imageIndex.innerHTML = `0${i+1}`;
