@@ -1,0 +1,434 @@
+*{
+  padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background-color: lemonchiffon;
+	background-image: url("../about.jpeg");
+	background-blend-mode:color-burn;
+}
+
+/* || VARABLES*/
+:root{
+	--FS:max(12px,2vh);
+	--FF:'Microsoft Sans Serif', Arial, Helvetica, sans-serif;
+}
+
+/* || HEAD PART*/
+.heading{
+	height: 14vh;
+	min-width: 900px;
+	display: flex;
+	flex: row nowrap;
+	/* border: 1px solid hotpink; */
+}
+.logo{
+	flex-grow: 1;
+	/* border: 1px solid yellow; */
+}
+.logo a,:visited,:active{
+	text-decoration: none;
+	color: black;
+}
+.hheading{
+	height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+/* 	border: 1px solid navy; */
+	cursor: default;
+}
+
+.letter {
+  color: rgb(21, 209, 127);
+  white-space: nowrap;
+  transform: translate(0%, 0%);
+  font-size: max(30px,4vw);
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+
+.letter:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-10%, -30%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+
+
+
+
+.JEENMATA{
+	width: 120px;
+/* 	height: 100%;
+	background-color: floralwhite;
+	background-image: url("../Jeen-Mata-e1481273229309.jpg");
+	background-size: cover; */
+	/* border: 1px solid magenta; */
+	background-color: antiquewhite;
+	background-image: url("../Jeen-Mata-e1481273229309.jpg");
+	background-size: cover;
+}
+#jeenMata{
+	width: 100%;
+	height: 100%;
+	padding-left:1px ;
+	display: none;
+}
+
+/* || MAIN PART*/
+.aboutMain{
+	height: 80vh;
+	min-height:510px ;
+	min-width: 900px;
+	display: flex;
+	flex:row nowrap;
+	gap: 2%;
+	/* border: 1px solid violet; */
+}
+.aboutus{
+	width: 47%;
+	margin-left: 2%;
+	/* border: 1px solid khaki; */
+}
+.aboutUsPreview{
+	width: 47%;
+	margin-right: 2%;
+	/* border: 1px solid yellowgreen; */
+}
+
+
+/* || ABOUT AREA*/
+.aboutus{
+	display: flex;
+	flex-direction: column;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:center;
+	gap:1rem;
+}
+
+/* || HEADING*/
+#aboutusHeading{
+	width: 70%;
+	height: 10%;
+	display: grid;
+	place-content: center;
+	font-size: max(30px,3.5vw);
+	font-family: 'HandelGothic BT' ,'Microsoft Sans Serif',sans-serif,monospace;
+	font-weight: bolder;
+	opacity: 0.8;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	color: hsla(0, 0%, 0%, 0.589);
+	background-color: hsla(300, 9%, 77%, 0.285);
+/* 	color:dodgerblue;
+	background-color: whitesmoke ; */
+	letter-spacing: 2px;
+	/* border: 1px solid fuchsia; */
+}
+/* || QOUTE*/
+#quote{
+	width: 70%;
+	height: 15%;
+	display: grid;
+	place-content: center;
+	/* border: 1px solid indigo; */
+}
+
+/* ||LIST ITEM*/
+.items{
+	width: 70%;
+	height: 35%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* text-align: center;
+	columns: 2 30%;
+	white-space: wrap;
+	padding: 12px; */
+	gap: 0.25rem;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+	/* border: 1px solid darkmagenta; */
+	border: 1px solid transparent;
+	border-radius: 6px;
+	color: hsl(0, 15%, 23%);
+	background-color: hsla(300, 9%, 77%, 0.285);
+	font-size: var(--FS);
+	
+}
+.items a,:visited{
+	text-decoration:underline;
+	color: black;
+	color: hsl(0, 0%, 0%);
+}
+
+/* || MYQOUTE*/
+#myquote{
+	width: 85%;
+	height: 19%;
+	display: grid;
+	place-content: center;
+	white-space:pre-wrap;
+	overflow-wrap: break-word;
+	padding: 15px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	font-size: var(--FS);
+	/* border: 1px solid rgb(221, 126, 1); */
+	border: 1px solid transparent;
+	border-radius: 6px;
+	color: hsl(0, 15%, 23%);
+	background-color: hsla(300, 9%, 77%, 0.285);
+}
+
+/* || FUTER INFORMATION*/
+#futerInfo{
+	width: 80%;
+	height: 8%;
+	font-size: 12px;
+	display: grid;
+	place-content: center;
+	padding: 15px;
+	font-size: var(--FS);
+	/* border: 1px solid cornflowerblue; */
+	border: 1px solid transparent;
+	border-radius: 6px;
+	color: hsl(0, 15%, 23%);
+	background-color: hsla(300, 9%, 77%, 0.285);
+}
+/* || FOOTER*/
+.copyright{
+	min-width: 900px;
+	height: 6vh;
+	min-height: 39px;
+	padding-top: 5px;
+	display: grid;
+	place-content: center;
+	font-size:max(0.80rem,2vh);
+/* 	border: 1px solid blue; */
+
+border-top: 1px solid black;
+}
+.right{
+	display: grid;
+	place-content: center;
+	font-size: max(0.50rem,1.75vh);
+}
+
+/* || PREVIEW PANEL*/
+/* BED&MASTERBED*/
+#bedsAndMasterbed{
+	height: 100%;
+	display: none;  /* |||||||||||| CHANGE THE DISPLAY FLEX*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+#Title{
+	height:10%;
+	flex-grow: 0;
+	display: grid;
+	place-content: center;
+	font-size: max(20px,2.3vw);
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+/* 	border: 1px solid goldenrod; */
+}
+#underTitel{
+	flex-grow: 1;
+	padding: 15px;
+}
+.leftBlock{
+	width: 30%;
+	height: 20%;
+	float: left;
+	margin: 2rem;
+	/* border: 1px solid blueviolet; */
+}
+.firstParagraph{
+	padding: 1rem;
+	font-size: var(--FS);
+}
+.clear{
+	clear: both;
+}
+.rightBlock{
+	width: 30%;
+	height: 20%;
+	float: right;
+	margin: 2rem;
+	/* border: 1px solid mediumspringgreen; */
+}
+
+.secondParagraph{
+	padding: 1rem;
+	font-size: var(--FS);
+}
+
+/* || TABLE*/
+#tables{ /* Section ID*/
+	height: 100%;
+	display: none;  /* |||||||||||| CHANGE THE DISPLAY FLEX*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+/* || CHAIRS,STOOLS,SOFAS*/
+#chairAndStools{ /* Section ID*/
+	height: 100%;
+	display: none;  /* |||||||||||| CHANGE THE DISPLAY FLEX*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+/* || DOORS,WINDOWS*/
+#doorsAndWindows{ /* Section ID*/
+	height: 100%;
+	display:none;  /* |||||||||||| CHANGE THE DISPLAY FLEX*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+/* || DRESSING TABLE*/
+#dressingTable{ /* Section ID*/
+	height: 100%;
+	display: none;  /* |||||||||||| CHANGE THE DISPLAY FLEX*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+/* || KITCHEN MODULE*/
+#kitchenModule{ /* Section ID*/
+	height: 100%;
+	display: none;  /* |||||||||||| CHANGE THE DISPLAY FLEX*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+/* || MASTERBED ROOM / LIVING ROOM*/
+#masterbedRoom{ /* Section ID*/
+	height: 100%;
+	display:none;  /* |||||||||||| CHANGE THE DISPLAY FLEX*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+/* || OTHER TYPE */
+#otherFurniture{ /* Section ID*/
+	height: 100%;
+	display: none;  /* |||||||||||| CHANGE THE DISPLAY FLEX*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#displayTitle{
+	height: 100%;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background-color: hsla(300, 9%, 77%, 0.285);
+}
+#ptitle{
+	height: 35%;
+	flex-grow: 0;
+	display: grid;
+	place-content: center;
+	font-size: 60px;
+	padding: 55px;
+	opacity: 0.5;
+	color: hsl(0, 15%, 23%);
+}
+#pview{
+	flex-grow: 1;
+	font-size: 250px;
+	display: grid;
+	place-content: center;
+	opacity: 0.65;
+}
+
+#quote{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	color: hsl(0, 15%, 23%);
+	background-color: hsla(300, 9%, 77%, 0.285);
+}
+#qouteMain{
+
+	display: grid;
+	place-content: center;
+	padding: 4px;
+	letter-spacing: 1px;
+	font-size: 12px;
+	/* border:1px solid greenyellow; */
+}
+#qouteAuther{
+
+	word-wrap: break-word;
+	letter-spacing: 1px;
+	font-size: 12px;
+	display: flex;
+	flex: row wrap;
+	justify-content: flex-end;
+	align-items: center;
+
+}
+
+@media screen and (max-width:481px) {
+	body{
+		max-width: 425px;
+	}
+	.heading{
+		min-width: 300px;
+		height: 80px;
+	}
+	.letter{
+		font-size: 4.5vw;
+	}
+	.JEENMATA{
+		width: 90px;
+	}
+	.aboutMain{
+		min-width: 320px;
+		height: 1800px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.aboutus{
+		min-width: 300px;
+		width: 100%;
+		min-height: 950px;
+	}
+	.aboutUsPreview{
+		min-width: 320px;
+		width: 100%;
+		min-height: 750px;
+
+	}
+	#aboutusHeading{
+		width: 80%;
+	}
+	#quote{
+		height: 10%;
+	}
+	.items{
+		width: 75%;
+		white-space:nowrap;
+	}
+
+	.copyright{
+		min-width: 320px;
+
+	}
+}

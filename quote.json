@@ -1,0 +1,46 @@
+{
+    "quote1":{
+        "author":"Steve Jobs",
+        "qoute":["Design is not just what it looks like and feels like. Design is how it works"]
+    },
+    "quote2":{
+        "author":" Lorinda Mamo",
+        "quote":["Every great design begins with an even better story"]
+    },
+    "quote3":{
+        "author":" Albert Einstein (German physicist)",
+        "quote":["A table, a chair, a bowl of fruit and a violin; what else does a man need to be happy?"]
+    },
+    "quote4":{
+        "author":" Charles Shackleton (Master Craftsman)",
+        "quote":["In 100 years time all the corners are rounded off, there are dents, dings. It is a souvenir of life and history"]
+    },
+    "quote5":{
+        "author":" Frank Lloyd Wright",
+        "quote":["Study nature, love nature, stay close to nature. It will never fail you"]
+    },
+    "quote6":{
+        "author":"Ghost",
+        "quote":["Keep Your Blood In, You’ll Need Every Drop."]
+    },
+    "quote7":{
+        "author":" Soap",
+        "quote":["Kids, Guns And Balloons... That’s A New One."]
+    },
+    "quote8":{
+        "author":"Sun Tzu",
+        "quote":["A leader leads by example not by force."]
+    },
+    "quote9":{
+        "author":" Herbert Hoover",
+        "quote":["Older men declare war. But it is the youth that must fight and die."]
+    },
+    "quote10":{
+        "author":" Prem Ramchandani",
+        "quote":["I regret I have but one life to give for my country"]
+    },
+    "quote11":{
+        "author":"Captain Manoj Pandey",
+        "quote":["If a death strikes before I prove my blood, I promise, I will kill death."]
+    }
+}

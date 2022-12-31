@@ -1,0 +1,332 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 100vh;
+	max-width: 100vw;
+	background-color: lemonchiffon;
+	background-image: url("../wood1.jpeg");
+/* 	background-attachment: fixed;
+	background-repeat: no-repeat;*/
+/* 	background-size: cover;  */
+}
+
+/* || HEADPART*/
+.header{
+	height: 12vh;
+	min-width: 630px;
+	/* border: 1px solid firebrick; */
+}
+
+.gheading{
+height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+/* border: 1px solid navy; */
+/* background-color: aqua; */
+cursor: default;
+}
+a{
+	cursor: pointer;
+}
+.letter {
+  color: rgb(21, 209, 127);
+  white-space: nowrap;
+  transform: translate(0%, 0%);
+  font-size: max(30px,3.5vw);
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+	
+}
+
+.letter:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-20%, -40%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+	
+}
+
+:any-link,:visited,:active{
+	text-decoration: none;
+	color: black;
+	
+}
+
+
+
+
+
+
+/* || GALLERY  HEADING*/
+.heading{
+	height: 11.7vh;
+	min-width: 630px;
+	margin-top: 5px;
+	display: flex;
+	flex: column nowrap;
+	/* border: 1px solid tomato; */
+}
+
+.forgegallery{
+	flex-grow: 1;
+	height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items: center;
+	/* border: 1px solid navy; */
+}
+
+.letterr {
+  color: rgb(21, 209, 127);
+  white-space: nowrap;
+  transform: translate(0%,0%);
+  font-size: max(30px,3vw);
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+
+.letterr:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-30%, -50%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+
+
+
+/* || JEEN MATA PHOTO 117px*/
+.JEENMATA{
+	/* width:14vw ; */
+	width: 120px;
+	flex-grow: 0;
+	padding: 2px;
+	background-color: wheat;
+	background-image: url("../Jeen-Mata-e1481273229309.jpg"),linear-gradient(to left,gold,silver);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: none;
+	/* border: 1px solid rosybrown; */
+}
+#JMP{
+	width: 100%;
+	height: 100%;
+}
+/* || IMAGES CONTROL PANEL*/
+
+.imgPanel{
+	width: 100%;
+	min-width: 530px;
+	min-height: 75vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0rem;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid fuchsia; */
+}
+
+/*|| LET RESOLVE IT*/
+.gallery{
+	width: 80%;
+	min-width: 530px;
+	min-height: 90vh;
+	/* max-width: 1600px; */
+	/* max-height: 800px; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid indianred; */
+}
+
+.gallery-image{
+/*     width: 10%;
+		min-width: 200px; */
+   /*  height: calc(50% - 20px); */
+ /*   height: 250px; */
+   /*  min-width: 200px;
+    min-height: 120px; */
+    /* margin: 10px;
+    overflow: hidden;
+		display: grid;
+		place-content: center; 200px */
+		min-width:190px;
+		max-width: 270px;
+		min-height: 142px;
+		max-height: 202px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		margin: 12px;
+		/* border: 1px solid magenta; */
+}
+
+.image{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	object-fit: cover;
+	transition: 1s;
+}
+
+/* popup */
+
+.popup{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 80%;
+	max-width: 1600px;
+	height: 90vh;
+	max-height: 800px;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	overflow: hidden;
+	transition: 1s;
+	opacity: 0;
+}
+
+.popup.active{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+
+.popup.active .close-btn,
+.popup.active .image-name,
+.popup.active .index,
+.popup.active .large-image,
+.popup.active .arrow-btn{
+	opacity: 1;
+	transition: opacity .5s;
+	transition-delay: 1s;
+}
+
+.top-bar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 300;
+}
+
+.image-name{
+	opacity: 0;
+}
+
+.close-btn{
+	opacity: 0;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #f00;
+	cursor: pointer;
+}
+
+.arrow-btn{
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px;
+	border-radius: 50%;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.left-arrow{
+	left: 10px;
+}
+
+.right-arrow{
+	right: 10px;
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.arrow-btn:hover{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.index{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 40px;
+	font-weight: 100;
+	color: rgba(255, 255, 255, 0.4);
+	opacity: 0;
+}
+
+.large-image{
+	margin-top: 5%;
+	width: 80%;
+	height: 80%;
+	object-fit: contain;
+	opacity: 0;
+}
+
+
+@media screen and (max-width:481px) {
+	body{
+		max-width:425px;
+		/* border: 1px soli firebrick; */
+	}
+	.header{
+		min-width: 320px;
+	}
+	.heading{
+		min-width: 320px;
+		height: 55px;
+	}
+	.imgPanel{
+		min-width: 320px;
+	}
+	.gallery{
+		min-width: 320px;
+	}
+	.letter{
+		font-size: 5vw;
+	}
+	.JEENMATA{
+		width: 70px;
+	}
+	.letterr:hover{
+		transform:scale(1.1)translate(-20%,-30%);
+	}
+}
