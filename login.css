@@ -7,7 +7,7 @@ body{
 	width: 100vw;
 	height: 100vh;
 	background-color: lemonchiffon;
-	background-image: url("../login.jpeg");
+	background-image: url("login.jpeg");
 }
 /* || VARIABLES */
 :root{
